@@ -4,7 +4,6 @@
 #include <sys/wait.h>
 #include <string.h>
 
- 
 
 struct MyProcess {
    char p_name[50];
@@ -19,7 +18,7 @@ struct MyProcess processList[n];
 
 
 // -----------------------------------------------------------------------------------------------
-// 										REMAINING PROCESS COUNT
+// ----- REMAINING PROCESS COUNT -----
 // -----------------------------------------------------------------------------------------------
 int remainingProcessCount(struct MyProcess processList[] , int processCount){
 	
@@ -34,7 +33,7 @@ int remainingProcessCount(struct MyProcess processList[] , int processCount){
 
 
 // -----------------------------------------------------------------------------------------------
-// 											PRINT PROCESS LIST
+// ----- PRINT PROCESS LIST -----
 // -----------------------------------------------------------------------------------------------
 void printScheduleResult(struct MyProcess processList[] , int processCount){
 	
@@ -53,7 +52,7 @@ void printScheduleResult(struct MyProcess processList[] , int processCount){
 
 
 // -----------------------------------------------------------------------------------------------
-// 											MAIN METHOD
+// ---- MAIN METHOD ---- 
 // -----------------------------------------------------------------------------------------------
 int main(){
 
@@ -87,7 +86,8 @@ int main(){
 
 	// -----------------------------------------------------------------------------------------------
 	// -----------------------------------------------------------------------------------------------
-	// 							PREEMPTIVE SHORTEST JOB FIRST SCHEDULING
+	// 	PREEMPTIVE SHORTEST JOB FIRST SCHEDULING
+
    	int timer = 0;
     do{
        
@@ -132,19 +132,9 @@ int main(){
 
     // -----------------------------------------------------------------------------------------------
 	// -----------------------------------------------------------------------------------------------
-	// 										PRINT RESULT 
+	// ----- PRINT RESULT ----- 
     printScheduleResult(processList,processCount);
 
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
 
