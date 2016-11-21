@@ -1,0 +1,13 @@
+
+#java specific
+*.jar
+*.class
+
+#ant specific 
+dist/
+build/
+
+#general swap/backup files
+.DS_Store
+Desktop.ini
+/target/
