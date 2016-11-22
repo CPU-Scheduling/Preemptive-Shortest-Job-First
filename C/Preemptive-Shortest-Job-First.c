@@ -14,8 +14,6 @@ struct MyProcess {
    int p_finish_time;
 };
 
-struct MyProcess processList[n];
-
 
 // -----------------------------------------------------------------------------------------------
 // ----- REMAINING PROCESS COUNT -----
